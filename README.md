@@ -1,41 +1,46 @@
 # Cucumber Axios Gherkin Framework for API Testing
 
-In this project, the BDD framework used is [Cucumber](https://cucumber.io/), [axios](https://github.com/axios/axios) is used to invoke the api.
+In this project, the BDD framework used with [Cucumber](https://cucumber.io/), [axios](https://github.com/axios/axios) to invoke the api and write the tests.
 
 
 ## Installation
 
 ### Pre-requisites
-Nodejs,
-Visual studio
+- Nodejs,
+
+- Visual studio
 
 ### npm packages
 
-axios,
-cucumber-js,
-cucumber-html-reporter.
+- axios,
+
+- cucumber-js,
+
+- cucumber-html-reporter.
 
 ### Run the below command to install all dependencies
 
-$npm install
+- $npm install
 
 
-## Test
-
-To run the test cases use the below command 
-
-$npm test
+## How to run test
+1. Clone this repository
+2. Install all the dependencies
+3. Run the below command to execute the test cases 
+- $npm test
 
 To run the test without report
 
-cucumber-js features/ -r steps/
+- cucumber-js features/ -r steps/
 
 
 ## reporter
-cucumber-js features/ -r steps/ --format json:report/cucumber_report.json
+To run the with report
+
+- cucumber-js features/ -r steps/ --format json:report/cucumber_report.json
 
 
-## Important Notes
+## Important Notes/Assumptions
 - `"type": "module"` in the package.json to indicate it's an ESM project
 - `cucumber.js` configuration file and `steps.js` using ESM syntax
 - `import` configuration option instead of `require` to load support code
@@ -48,7 +53,5 @@ cucumber-js features/ -r steps/ --format json:report/cucumber_report.json
     StepDefinitions :- features->step_definitions->steps.js
 - Language used :- JavaScript
 - Format :- Gherkin format using Cucumber with Axios
-- I have used only Given keyword/statements , because I thought there is no need of when. Also Given is common statement for the API's and it's the same end point we are hitting.
-
-
+- I have used only Given keyword/statements , because I thought there is no need of when. Also Given is     common statement for the API's and it's the same end point we are hitting.
 - Part 2(Functional Manual Testing) :- These tests are written using Gherkin format and the tests are available in the file functionaltest.feature which is placed in the root directory.
