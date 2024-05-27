@@ -1,0 +1,24 @@
+{
+  "name": "api-test-assignment-ibl",
+  "version": "1.0.0",
+  "description": "API testing with Cucumber.js and Axios",
+  "type": "module",
+  "scripts": {
+    "test": "cucumber-js --format json:reports/report.json && node report-html.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "*",
+    "axios": "^0.21.1",
+    "cucumber-html-reporter": "^7.1.1"
+  },
+  "author": "Murali Rajanna",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:muralibr8055/automation.git"
+  },
+  "keywords": [
+    "cucumber",
+    "Gherkin",
+    "BDD"
+  ]
+}

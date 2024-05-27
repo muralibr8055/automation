@@ -1,0 +1,311 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-get-request-to-api-endpoint",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Verify GET request to API endpoint",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 497884459
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "the response should have status code 200",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 357666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 5,
+            "name": "the response time should be less than 1000 milliseconds",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 220957
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-attributes-in-response-data",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify attributes in response data",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131813208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the \"id\" attribute should not be null or empty for all 4 items present in the data array",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 276999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "the type attribute should be episode for all items",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54041
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-the-\"title\"-field-in-\"episode\"-is-never-null-or-empty",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Verify the \"title\" field in \"episode\" is never null or empty",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 121316207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the title field in episode should never be null or empty for any schedule item",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 216249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-only-one-episode-has-\"live\"-field-in-\"episode\"-as-true",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify only one episode has \"live\" field in \"episode\" as true",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120807458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "only one episode in the list should have live field in episode as true",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 471958
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-transmission-start-before-transmission-end",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Verify transmission start before transmission end",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124482250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "the transmission_start date for each item should be before the transmission_end date",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 423874
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-\"date\"-header-in-response",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Verify \"Date\" header in response",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I make a GET request to \"https://testapi.io/api/RMSTest/ibltest\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126527374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the response should have a Date header",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 284957
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "test-api-endpoint;verify-404-error-for-non-existent-resource",
+        "keyword": "Scenario Outline",
+        "line": 37,
+        "name": "Verify 404 error for non-existent resource",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 31,
+            "name": "I make a invalid GET request to \"https://testapi.io/api/RMSTest/ibltest/2023-09-11\"",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120548958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the status code should be 404",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:87"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "the error object should have properties details and http_response_code",
+            "match": {
+              "location": "file:/Users/rajanm02/Documents/Automation/APT_Automation_Task/API_Assignment/features/step_definitions/steps.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "test-api-endpoint",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Test API Endpoint",
+    "tags": [],
+    "uri": "features/api-test.feature"
+  }
+]
