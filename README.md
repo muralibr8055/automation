@@ -1,6 +1,6 @@
 # Cucumber Axios Gherkin Framework for API Testing
 
-In this project, the BDD framework used with [Cucumber](https://cucumber.io/), [axios](https://github.com/axios/axios) to invoke the api and write the tests.
+In this project, the BDD Gherkin framework used with [Cucumber](https://cucumber.io/), [axios](https://github.com/axios/axios) and JavaScript to invoke the api and write the tests.
 
 
 ## Installation
@@ -23,19 +23,19 @@ In this project, the BDD framework used with [Cucumber](https://cucumber.io/), [
 - $npm install
 
 
-## How to run test
+## How to run tests
 1. Clone this repository
 2. Install all the dependencies
 3. Run the below command to execute the test cases 
 - $npm test
 
-To run the test without report
+To run the tests without report
 
 - cucumber-js features/ -r steps/
 
 
 ## reporter
-To run the with report
+To run the tests with report
 
 - cucumber-js features/ -r steps/ --format json:report/cucumber_report.json
 
@@ -48,9 +48,9 @@ To run the with report
     Also used api-test.feature file to define the scenario's in Gherkin format.
     Report folder is to store the support files required for reporting.
 
-- Part 1(Automation) of the assignment files are available in the following files
-    Feature files :- features->api-test.feature
-    StepDefinitions :- features->step_definitions->steps.js
+- Part 1(Automation) of the assignment files are available in the following files\
+    1. Feature files :- features->api-test.feature\
+    2. StepDefinitions :- features->step_definitions->steps.js\
 - Language used :- JavaScript
 - Format :- Gherkin format using Cucumber with Axios
 - I have used only Given keyword/statements , because I thought there is no need of when. Also Given is     common statement for the API's and it's the same end point we are hitting.
